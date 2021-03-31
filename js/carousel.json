@@ -1,0 +1,17 @@
+{
+    "images":[
+        {"url":"../img/carousel/feh-alfonse.png", "name":"Alfonse", "caption":"Prince of Askr"},
+        {"url":"../img/carousel/feh-sharena.png", "name":"Sharena", "caption":"Princess of Askr"},
+        {"url":"../img/carousel/feh-eirika.png", "name":"Eirika", "caption":"Restoration Lady"},
+        {"url":"../img/carousel/feh-berkut.png", "name":"Berkut", "caption":"Prideful Prince"},
+        {"url":"../img/carousel/feh-lysithea.png", "name":"Lysithea", "caption":"Child Prodigy"},
+        {"url":"../img/carousel/feh-hilda.png", "name":"Hilda", "caption":"Idle Maiden"},
+        {"url":"../img/carousel/feh-lethe.png", "name":"Lethe", "caption":"Gallia's Valkyrie"},
+        {"url":"../img/carousel/feh-lukas.png", "name":"Lukas", "caption":"Sharp Soldier"},
+        {"url":"../img/carousel/feh-sothis.png", "name":"Sothis", "caption":"Girl on the Throne"},
+        {"url":"../img/carousel/feh-seteth.png", "name":"Seteth", "caption":"Seiros Adherent"},
+        {"url":"../img/carousel/feh-nino.png", "name":"Nino", "caption":"Pious Mage"},
+        {"url":"../img/carousel/feh-myrrh.png", "name":"Myrrh", "caption":"Great Dragon"},
+        {"url":"../img/carousel/feh-lif.png", "name":"Líf", "caption":"Lethal Swordsman"},
+        {"url":"../img/carousel/feh-veronica.png", "name":"Veronica", "caption":"Emblian Princess"}
+]}

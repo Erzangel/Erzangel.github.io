@@ -1,0 +1,1354 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+    margin:0 auto;
+}
+
+header {
+    text-align: center;
+}
+
+body > header {
+    background-color: rgb(110, 89, 168);
+    background-image: linear-gradient(rgba(0, 0, 0, 0), 70%, rgba(255, 255, 255, 0.5)), url(../img/bg/h_cloudsheader2.png);
+    height: 100px;
+    width: 100%;
+    /*border-bottom-style: solid;
+    border-bottom-color: #ccc;
+    border-bottom-width: 2px;*/
+}
+
+.centered {
+    margin-left: 20%;
+    margin-right: 20%;
+    width: 60%;
+}
+
+h1.centered {
+    text-align:center;
+}
+
+.centered_small {
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 50%;
+}
+
+.padded10 {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+div a {
+    color: #bbb;
+}
+
+/* Rules relative to wrapper elements */
+/* ////////////////////// */
+.wrapper {
+    /*padding: 0px 0px 5px 0px;*/
+    padding-bottom: 5px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+section > div.wrapper > h1, section > div.wrapper > article > h1, div.wrapper h1.content-header {
+    background-color: #333;
+    color: #eee;
+    padding: 7px 9px;
+    border-left-style: solid;
+    border-left-width: 10px;
+    border-left-color: rgba(81, 154, 186, 1);
+    margin-top: 0px;
+    margin-bottom: 5px;
+    border-radius: 5px 5px 0 0;
+}
+
+section > div.wrapper.black_bg > h1, section > div.wrapper.black_bg > article > h1 {
+    background-color: #444;
+}
+/* ////////////////////// */
+
+.white_bg {
+    background-color: #eee;
+}
+
+.black_bg {
+    background-color: #333;
+    color: #eee;
+}
+
+.page_title {
+    text-align: center;
+    font-size: 30pt;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: inline-block;
+}
+
+.section-title {
+    margin-left: 30px;
+    font-size: 26pt;
+    font-weight: lighter;
+    margin-top: 20px;
+    text-shadow: 2px 2px 2px #111;
+    text-decoration: underline;
+}
+
+.outlined {
+    border-style: solid;
+    border-color: #444;
+    border-width: 5px;
+    box-sizing:border-box;
+}
+
+.outlined.white_bg {
+    border-color: #aaa;
+}
+
+.floatright {
+    float: right;
+    margin: 5px;
+}
+
+.block-center {
+    display: block;
+    margin: auto;
+}
+
+.image-caption {
+    font-size: 10pt;
+    display: block;
+    margin: 10px 0;
+    width: 100%;
+    text-align: center;
+}
+
+.heading-text-shadow {
+    text-shadow: 3px 3px 2px rgba(100, 100, 100, 0.4);
+}
+
+div.logo {
+    float: left;
+    border-right-style: solid;
+    border-right-color: #ccc;
+    border-right-width: 2px;
+    height: 100px;
+    width: auto;
+    overflow: hidden;
+    background-image: url(../img/chara/h_sharena_small.png),
+    url(../img/chara/h_alfonse_small.png),
+    url(../img/chara/h_anna_small.png);
+    background-repeat: no-repeat;
+    background-size: 70px auto;
+    background-position-x: 255px, 90px, 40px;
+    background-position-y: 100px;
+    transition: background-position-y 0.8s ease;
+}
+
+div.logo:hover {
+    background-position-y: 60px, 65px, 67px;
+}
+
+div.logo a img {
+    width: auto;
+    height: 80px;
+    padding: 10px;
+}
+
+header nav {
+    float: right;
+    width: calc(100% - 410px);
+    height:100px;
+}
+
+header nav ul {
+    list-style-type:none;
+    width: 100%;
+    height: 100%;
+    float: right;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    /*flex-flow: row wrap;*/
+    justify-content: space-evenly;
+}
+
+/* Early design for the navigation buttons at the top bar */
+/*header nav ul li {
+    height: 50px;
+    margin-top: 6px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-image:linear-gradient(rgba(255,255,255, 1), 70%, rgba(200, 200, 200, 1));
+    flex-grow: 1;
+    text-align:center;
+    border-style:groove;
+    border-radius: 4px;
+    padding-top: 30px;
+}*/
+
+header nav ul li {
+    height: 50px;
+    margin-top: 6px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    /*background-image:linear-gradient(rgba(235,235,235, 1), 70%, rgba(200, 200, 200, 1));*/
+    /*background-image: url(../img/bg/bg_tile3.png);*/
+    background-image: url(../img/bg/bg_fe2.jpg);
+    background-size: 300px auto;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    flex-grow: 1;
+    text-align:center;
+    border-style:solid;
+    /*border-color:rgba(190, 190, 190, 1);*/
+    border-color: #999;
+    border-width: 2px;
+    border-radius: 10px;
+    padding-top: 30px;
+    text-shadow:1px 1px 1px rgba(0, 0, 0 , 0.6),
+    1px -1px 1px rgba(0, 0, 0 , 0.6),
+    -1px 1px 1px rgba(0, 0, 0 , 0.6),
+    -1px -1px 1px rgba(0, 0, 0 , 0.6);
+}
+
+header nav ul li:hover {
+    /*background-image: linear-gradient(rgba(255,255,255, 1), 80%, rgba(172, 172, 200, 1));*/
+    background-image: radial-gradient(ellipse closest-side, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.2)),
+    url(../img/bg/bg_fe2.jpg);
+    border-color: #ddd;
+}
+
+header.top-header nav ul li a {
+    font-weight: bold;
+}
+
+li a {
+    text-decoration: none;
+    color: #ccc;
+    display: block;
+}
+
+li a:hover {
+    text-shadow: 2px 0 1px rgba(100, 100, 100, 0.2);
+}
+
+main section {
+    background-color: #ddd;
+    margin: 0;
+    padding: 10px 0;
+}
+
+section.subheader {
+    background-color: #333;
+    height: 40px;
+    clear:both;
+}
+
+section.subheader ul {
+    margin: 0;
+    float: left;
+    list-style-type: none;
+    position: relative;
+}
+
+section.subheader ul li {
+    float: left;
+    line-height: 40px;
+}
+
+section.subheader li > ul {
+    position: absolute;
+    display: none;
+}
+
+section.subheader li:hover > ul {
+    display: block;
+    background-color: rgba(51, 51, 51, 0.9);
+    padding: 0;
+    z-index: 4;
+}
+
+section.subheader li:hover > ul > li {
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+
+section.subheader li a {
+    color: #ddd;
+    display: block;
+    padding: 0 10px;
+}
+
+section.subheader li a:hover {
+    text-shadow: 0 0 3px #eee;
+    background-color: #444;
+}
+
+/* Rules relative to the sticky class, applied through JavaScript */
+.subheader.sticky, header.sticky {
+    position: fixed;
+    z-index: 6;
+    width: 100%;
+    top: 0;
+}
+
+header.sticky, .subheader.extended {
+    animation-name: extend-animation;
+    animation-duration: 0.8s;
+}
+
+.subheader.sticky + main {
+    padding-top: 32px;
+}
+
+header.top-header.sticky ~ main {
+    padding-top: 132px;
+}
+
+.subheader.extended {
+    /*top: 100px;*/
+    padding-top: 100px;
+    z-index: 5;
+}
+
+@keyframes extend-animation {
+    from {
+        top: -100px;
+    }
+    
+    to {
+        top: 0px;
+    }
+}
+
+
+
+.rightside {
+    margin-left: 50%;
+    margin-right: 5%;
+    box-shadow: 2px 2px 4px rgba(30, 30, 30, 0.5);
+}
+
+/* RULES DEDICATED FOR THE HOMEPAGE FIRST SECTION, WITH THE FIRE EMBLEM: THREE HOUSES TITLE SCREEN BACKGROUND */
+
+section.th_background {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), 90%,  rgba(0, 0, 0 , 0.2)),
+                    url("../img/bg/th_mmenu1.png");
+    background-color: #276127;
+    background-repeat: no-repeat;
+    background-size: 1920px auto;
+    /* The following rule is used to keep the background position slightly to the left when the full size can't be used */
+    background-position-x: calc(30vw - 576px);
+    padding-top: 110px;
+    height:800px;
+    width:100%;
+}
+
+section.th_background_2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), 90%,  rgba(0, 0, 0 , 0.2)),
+                    linear-gradient(to bottom, rgba(0, 0, 0, 0), 95%,  rgba(0, 0, 0 , 0.9)),
+                    url("../img/bg/th_mmenu2.png");
+    background-color: #276127;
+    background-repeat: no-repeat;
+    background-size: 1920px auto;
+    background-position-x: calc(30vw - 576px);
+    height: 900px;
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+    animation-name: th_bg_transition;
+    animation-duration: 6s;
+    animation-iteration-count:initial;
+}
+
+@keyframes th_bg_transition {
+    from {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+section.th_background article {
+    background-color: rgba(175, 175, 175, 0.55);
+    border-radius: 30px;
+    padding: 30px;
+    margin-bottom: 100px;
+    z-index: 2;
+    position: absolute;
+    /*text-shadow: 0 0 1px rgba(250, 250, 250, 0.4);*/
+    text-shadow: -1px 0 0 rgba(200, 200, 200, 0.1),
+        1px 0 0 rgba(200, 200, 200, 0.1),
+        0 1px 0 rgba(200, 200, 200, 0.1),
+        0 -1px 0 rgba(200, 200, 200, 0.1);
+}
+
+section.th_background article header img {
+    width: calc(100% - 30px);
+    padding: 10px 15px 20px 15px;
+}
+
+section.th_background article h2 {
+    font-size: 26px;
+    text-align: center;
+}
+
+section.th_background article h4 {
+    font-size: 20px;
+    text-align: justify;
+}
+
+/* More rules for the Main Page */
+
+section.bg_fe2 {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0), 90%,  rgba(0, 0, 0 , 0.8)),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0), 90%,  rgba(0, 0, 0 , 0.8)),
+    url(../img/bg/bg_fe2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+/* Rules for the FEH Page background */
+
+section.bg_fe1 {
+    background-image: 
+        /*url(../img/chara/h_alfvero_header2.png),*/    
+        linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0 ,0.3) 20%, rgba(0, 0, 0 ,0.3) 80%, rgba(0, 0, 0, 0.6) 100%),
+        url(../img/bg/bg_fe1.jpg);
+    background-repeat: 
+        no-repeat,
+        repeat,
+        repeat;
+    background-size: 
+        100%,
+        auto,
+        auto;
+    color: #ccc;
+    padding-bottom: 25px;
+}
+
+/* Rules for the FE Games Page background */
+
+img.fegames-lords-image {
+    display: block;
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img + small {
+    text-align: center;
+    display: block;
+    margin-bottom: 80px;
+}
+
+div.q-and-a {
+    padding-bottom: 15px;
+    margin-bottom: 35px;
+    border-bottom-style: dotted;
+    border-bottom-width: 2px;
+    border-bottom-color: #555;
+}
+
+div.q-and-a b {
+    text-shadow: 1px 1px 2px #000;
+}
+
+div.q-and-a p + p {
+    font-size: 14pt;
+}
+
+img.por-screenshot {
+    width: 25%;
+    height: auto;
+}
+
+section.bg-tile {
+    background-image: url(../img/bg/bg_tile2.png);
+    background-repeat: repeat;
+}
+
+section.bg-tile section {
+    background-color: initial;
+}
+
+section table {
+    text-align: center;
+    margin: auto;
+}
+
+section td, section th {
+    border-style: solid;
+    border-color: #888;
+    border-width: 3px;
+    padding: 0.8rem;
+}
+
+/* Rules for the pop-up items on the FE Games page */
+ul.extendable-content-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul.extendable-content-list li {
+    margin: 10px;
+}
+
+header.extendable-header {
+    padding: 10px;
+    height: 30px;
+    color: #ddd;
+    background-color: #444;
+    border-radius: 5px;
+}
+
+header.extendable-header button.extendable-button {
+    float: left;
+    height: 29px;
+    width: 29px;
+    padding: 1px;
+    margin: 0 10px 0 5px;
+    font-size: 18pt;
+    line-height: 0;
+}
+
+header.extendable-header h2 {
+    display: block;
+    float: left;
+    margin: 0;
+}
+
+section article.extendable {
+    border-style: solid;
+    border-color: #444;
+    border-width: 4px;
+    border-radius: 0 0 10px 10px;
+    padding: 10px;
+    background-color: #ddd;
+}
+
+section article.extendable h1 {
+    font-size: 1.2em;
+    margin: 15px;
+}
+
+section article.extendable ul {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+section article.extendable ul li {
+    display: block;
+    height: 300px;
+}
+
+section article.extendable ul li img {
+    height: 100%;
+}
+
+section article.extendable p {
+    font-size: 1.1em;
+}
+
+section .hidden {
+    display: none;
+}
+
+/* Rules for the animated characters appearing on the FEH page */
+/* /////////////////////////////////////////////////// */
+section.bg_feh_characters {
+    position: absolute;
+    width: 100%;
+    height: 1000px;
+    background-color: transparent;
+    overflow:hidden;
+}
+
+img.leftBG {
+    position: absolute;
+    width: 30%;
+    left: calc((10px - 10%));
+}
+
+img.rightBG {
+    position: absolute;
+    width: 30%;
+    float: right;
+    right: calc(10px - 10%);
+}
+
+img.firstrowBG {
+    top: 10px;
+    z-index: 1;
+    opacity: 1;
+    animation: herobg_fadein_early 1s linear 0s;
+    animation-iteration-count:1;
+}
+
+img.secondrowBG {
+    top: 30px;
+    z-index: 2;
+    animation: herobg_fadein_early 2s linear 0s;
+    animation-iteration-count: initial;
+}
+
+img.thirdrowBG {
+    top: 180px;
+    width: 25%;
+    z-index: 3;
+    animation: herobg_fadein_late 3s linear 0s;
+}
+
+img.fourthrowBG {
+    top: 190px;
+    width: 25%;
+    z-index: 3; /* This last value was changed so that the characters did not go over the subheader when sticky */
+    animation: herobg_fadein_late 4s linear 0s;
+}
+
+@keyframes herobg_fadein_early {
+    from {
+        opacity: 0;
+    }
+
+    60% {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes herobg_fadein_late {
+    from {
+        opacity: 0;
+    }
+
+    70% {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+/* /////////////////////////////////////////// */
+/* End of the rules for the characters animation on the background of the FEH page */
+
+
+/* RULES FOR THE FE3H PAGE */
+section.bg_fe3h1 {
+    background-image: url(../img/bg/bg_fe3h1.jpg);
+    background-repeat: no-repeat;
+    /* We're going to use the same trick that we used for the th_background rule to center the background slightly
+    if the full width can't be used. */
+    background-size: 1920px auto;
+    background-position-x: calc(30vw - 576px);
+    background-position-y: -60px;
+    text-shadow: -1px 0 3px rgba(20, 20, 20, 0.9),
+    1px 0 3px rgba(20, 20, 20, 0.9),
+    0 1px 3px rgba(20, 20, 20, 0.9),
+    0 -1px 3px rgba(20, 20, 20, 0.9);
+    color: #eee;
+}
+
+section.bg_fe3h1 > h1.page_title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 38pt;
+    margin-bottom: 20%;
+}
+
+main > section > article {
+    margin-top: 20px;
+}
+
+article.padded10 h2 {
+    margin-top: 10px;
+}
+
+article.padded10 h2 em {
+    text-decoration:underline;
+}
+
+/* Rules for p in articles (initially written for the FEH page presentation) */
+
+article p {
+    font-size: 16pt;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+article p a {
+    color: #bbb;
+}
+
+/*article h2, article p {
+    
+}*/
+
+/* Rules for download badges */
+/* ///////////////////////// */
+div.download_badges ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    justify-content:center;
+    flex-flow: row wrap;
+}
+
+div.download_badges ul li a img {
+    height: 10vh;
+    width: auto;
+    padding: 3px 10px;
+}
+/* ///////////////////////// */
+
+/* Rules for the JavaScript 3x3 gallery */
+div.gallery {
+    /* We apply the flex display rule for our gallery, so that it displays itself nicely */
+    display: flex;
+    /* We set a fixed width (that we will modify using media queries once we reach the appropriate screen width */
+    width: 900px;
+    /* We set the margin to auto, so that the content centers itself on the screen using the given width */
+    margin: auto;
+    /* This flex rule allows gallery items to go to the bottom row when there is not enough space on the right */
+    flex-flow: row wrap;
+    background-color: #eee;
+}
+
+.gallery-item {
+    /* Within the gallery item, we set the display to flex so that we stack both the img and the caption on top of another */
+    display: flex;
+    /* This flex rule allows the items to be on top of another */
+    flex-direction: column;
+    /* This is a 3x3 column grid, so we want each column item to take 33% of the space */
+    width: 33%;
+    /* A little bit of margin, so that each row is a bit separated from another for visibility */
+    margin-top: 5px;
+    margin-bottom: 15px;
+    /* Color of the text within */
+    color: #333;
+    /* Those anchors are not really text-based, but are rather the combination of an image and a caption.
+    So we remove the underlining */
+    text-decoration: none;
+    /* And we add some padding so that each item is not right next to another */
+    padding: 15px;
+    /* This specific rule allows the width value to affect not the content part of the item,
+     but to take into account the padding as well */
+    box-sizing:border-box;
+    border-radius: 10px;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    transition-timing-function:ease-out;
+    /* Grid rules */
+    border-style: solid;
+    border-color: #bbb;
+    border-width: 3px;
+    border-top-color: #ddd;
+    border-top-width: 1px;
+    border-left-color: #ddd;
+    border-left-width: 1px;
+}
+
+.gallery-item:hover {
+    background-color: #ccc;
+}
+
+.gallery-item img {
+    width: 100%;
+}
+
+/* ////////////////////////////////////////////////////////////// */
+/* These rules are specific to the image carousel on the FEH page */
+.carousel {
+    /* This line is needed in order for the position: absolute rule for the child element to apply properly */
+    position: relative;
+    width: 421px;
+    height: 600px;
+    margin: auto;
+    background-color: rgba(10, 10, 10, 0.45);
+    /*background-image: url(../img/bg/feh_summoning_bg.png);
+    background-size: 100% auto;
+    background-position-y: -290px;*/
+    border-style:solid;
+    border-color: rgba(200, 200, 200, 0.2);
+    border-width: 2px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.carousel-images {
+    /* We don't want the images to go "below" the other elements of the carousel, so we set its position to absolute */
+    position: absolute;
+    /* The width and height of this element is determined in the imgcarousel.js file */
+    float: left;
+    padding: 10px 0 0 0;
+    transition-property: left;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    /* The carousel is 450 pixels large. However, each image is 421 pixels wide.
+    To center them, we shift everything 15 pixels from the left border to the right */
+    left: 15px;
+}
+
+.carousel-images img {
+    width: 421px;
+    height: 480px;
+}
+
+.carousel nav {
+    position: absolute;
+    z-index: 2;
+    width: 421px;
+    height: 100%;
+    /* We will add some padding and modify the box sizing rules to not make the box larger than it should be */
+    /*padding: 10px;
+    box-sizing: border-box;*/
+}
+
+.carousel nav a {
+    text-decoration: none;
+    line-height: 480px;
+    font-size: 30pt;
+    color: rgba(204, 204, 204, 0.50);
+    height: 100%;
+    transition-property: color;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+}
+
+.carousel nav a:hover {
+    color: #ccc
+}
+
+/* Those two CSS selectors aim to make each of the buttons stick to the left and right */
+.carousel nav a:first-child {
+    float: left;
+    padding: 0 56px 0 6px;
+}
+
+.carousel nav a:last-child {
+    float: right;
+    padding: 0 6px 0 56px;
+}
+
+.carousel nav a:first-child:hover {
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(50, 50, 50 , 0.5));
+}
+
+.carousel nav a:last-child:hover {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(50, 50, 50 , 0.5));
+}
+
+.carousel-name, .carousel-caption {
+    position: absolute;
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 35px 0 15px 0;
+    margin: 0;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+}
+
+.carousel-name {
+    bottom: 30px;
+    font-size: 20pt;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 1),
+        3px 3px 1px rgba(0, 0, 0, 1),
+        3px 3px 1px rgba(0, 0, 0, 1);
+}
+
+.carousel-caption {
+    bottom: 0;
+    font-size: 16pt;
+    font-weight: normal;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(50, 50, 50 , 0.5) 70% , rgba(90, 90, 90 , 0.5));
+    border-bottom-style: solid;
+}
+
+#carouselCircles {
+    height: 10px;
+    width: 425px;
+    bottom: 90px;
+    padding: 0;
+    margin: 0 auto;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+
+#carouselCircles span {
+    border-style: solid;
+    border-radius: 50%;
+    border-width: 2px;
+    border-color: rgba(250, 250, 250, 0.4);
+    width: 10px;
+    height: 10px;
+    margin: 0 1px;
+    transition-property: background-color;
+    transition-duration: 0.4s;
+}
+
+#carouselCircles span.empty-circle {
+    background-color: rgba(250, 250, 250, 0);
+}
+
+#carouselCircles span.solid-circle {
+    background-color: rgba(250, 250, 250, 0.5);
+}
+
+.carousel-auto-scroll {
+    border-style:solid;
+    border-color: rgba(250, 250, 250, 0.2);
+    border-width: 2px;
+    border-right-style: none;
+    border-radius: 10px 0 0 10px;
+    position: absolute;
+    bottom: 75px;
+    height: 30px;
+    width: 40px;
+    right: 0px;
+    z-index: 2;
+    text-align: center;
+    line-height: 32px;
+    color: rgba(250, 250, 250, 0.3);
+    transition-property: color;
+    transition-duration: 0.3s;
+}
+
+.carousel-auto-scroll.auto-scroll-enabled {
+    color: rgba(250, 250, 250, 0.6);
+}
+
+
+
+/* Rules for the navigation links at the bottom of the home page (there are plenty) */
+section > div > nav {
+    text-align: center;
+}
+
+section > div > nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+section > div > nav ul > li a {
+    background-color: #aaa;
+    background-repeat: no-repeat;
+    background-origin:border-box;
+    background-size: 100% auto;
+    margin: 15px 5px;
+    /*padding: 80px 15px;*/
+    height: 230px;
+    border-radius: 3px;
+    /*text-shadow: 0 0 10px rgba(25, 25, 25, 1);*/
+    text-shadow: 1px 0 0 rgba(25, 25, 25, 1),
+                -1px 0 0 rgba(25, 25, 25, 1),
+                0 1px 0 rgba(25, 25, 25, 1),
+                0 -1px 0 rgba(25, 25, 25, 1);
+    color: #fff;
+    border-style: inset;
+    border-color: rgba(0, 0, 0, 0.3);
+    transition-property: background-size, background-position-x, background-position-y;
+    transition-duration: 1s, 1s, 1s;
+    transition-timing-function: ease;
+    position: relative;
+}
+
+section > div > nav ul > li a h2 {
+    /* This centering was achieved thanks to the help of this website: */
+    /* https://www.w3schools.com/howto/howto_css_center-vertical.asp */
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+section > div > nav ul > li a:hover {
+    background-size: calc(100% + 60px) auto;
+    background-position-x: -30px;
+    background-position-y: -110px;
+}
+
+section > div > nav ul > li a:hover h2 {
+    text-shadow: 0 0 5px rgba(250, 250, 250, 0.7),
+                1px 0 0 rgba(25, 25, 25, 1),
+                -1px 0 0 rgba(25, 25, 25, 1),
+                0 1px 0 rgba(25, 25, 25, 1),
+                0 -1px 0 rgba(25, 25, 25, 1);
+}
+
+section > div > nav ul > li a.feh_banner {
+    background-image: url(../img/bg/navban_feh1.jpg);
+    background-position-y: -100px;
+}
+
+section > div > nav ul > li a:hover.feh_banner {
+    background-position-y: -110px;
+}
+
+section > div > nav ul > li a.fehnews_banner {
+    background-image: url(../img/bg/navban_feh2.jpg);
+    background-position-y: -50px;
+}
+
+section > div > nav ul > li a:hover.fehnews_banner {
+    background-position-y: -60px;
+}
+
+section > div > nav ul > li a.fe3h_banner {
+    background-image: url(../img/bg/navban_fe3h1.jpg);
+    background-position-y: -120px;
+}
+
+section > div > nav ul > li a:hover.fe3h_banner {
+    background-position-y: -135px;
+}
+
+section > div > nav ul > li a.fegames_banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url(../img/bg/bg_fegames.jpg);
+    background-position-y: 0px, -210px;
+}
+
+section > div > nav ul > li a:hover.fegames_banner {
+    background-position-y: 0px, -225px;
+}
+
+
+a:hover {
+    text-decoration: none;
+}
+
+
+/* General rules for the footer, common to each page */
+main + footer {
+    /*background-color: rgb(40, 54, 133);*/
+    background-color: #222;
+    text-align: center;
+    padding: 5px 0 0px 0;
+    color: #aaa;
+}
+
+main + footer ul {
+    margin: 0 25%;
+    width: 50%;
+    list-style-type: none;
+    padding: 0;
+    padding-bottom: 0;
+    padding-top: 25px;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: #444;
+}
+
+main + footer ul li {
+    padding: 6px 0px;
+}
+
+main + footer ul li a:hover {
+    text-shadow: 0 0 3px #eee;
+}
+
+main + footer ul li a {
+    color: #aaa;
+}
+
+main + footer section {
+    display: inline-block;
+    clear: both;
+    margin: 15px 0;
+    padding: 35px 0 0 0;
+    border-top-style: dashed;
+    border-top-color: #444;
+}
+
+main + footer p {
+    margin: 25px 0 0 0;
+}
+
+
+/* Rules applying for pop-up items, located in the footer */
+div.pop-up {
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 9;
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.2);
+    animation-name: appear;
+    animation-duration: 0.8s;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+div.pop-up div {
+    position: absolute;
+    top: 35%;
+    padding: 0 0 10px 0;
+}
+
+div.pop-up div h1 {
+    margin: 0;
+}
+
+div.pop-up div p {
+    color: #ddd;
+    font-size: 15pt;
+    padding: 0 20px;
+    text-align: justify;
+}
+
+div.pop-up.hidden {
+    display: none;
+    opacity: 0;
+}
+
+div.pop-up a {
+    color: inherit;
+}
+
+
+/* When the screen becomes a little small, we apply the following rules: */
+@media(max-width: 1400px) {
+    .centered {
+        margin-left: 3%;
+        margin-right: 3%;
+        width: 94%;
+    }
+
+    /* Rules for the characters in the FEH page */
+
+    img.firstrowBG {
+        top: 300px;
+        z-index: 1;
+        opacity: 1;
+        animation: herobg_fadein_early 1s linear 0s;
+        animation-iteration-count:1;
+    }
+    
+    img.secondrowBG {
+        top: 430px;
+        z-index: 2;
+        animation: herobg_fadein_early 2s linear 0s;
+        animation-iteration-count: initial;
+    }
+    
+    img.thirdrowBG {
+        top: 580px;
+        width: 25%;
+        z-index: 3;
+        animation: herobg_fadein_late 3s linear 0s;
+    }
+    
+    img.fourthrowBG {
+        top: 690px;
+        width: 25%;
+        z-index: 4;
+        animation: herobg_fadein_late 4s linear 0s;
+    }
+
+    main + footer ul {
+        margin: 0 10%;
+        width: 80%;
+    }
+
+    main + footer section {
+        font-size: 1.3rem;
+    }
+}
+
+/* We set some media rules for 900px, as this is the exact size of the 3x3 gallery */
+@media(max-width: 900px) {
+    div.gallery {
+        width: 100%;
+    }
+    
+    .gallery-item {
+        width: 50%;
+    }
+
+    /* This can also be used to fix the background for mobile on the main page */
+    section.bg_fe2 {
+        background-size: 200% auto;
+        background-position-x: 50%;
+    }
+}
+
+@media(max-width: 800px) {
+    .rightside {
+        margin-left: 30%;
+    }
+
+    img.image-responsive {
+        width: 80%;
+    }
+
+    .centered_small {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    
+    div.logo {
+        clear: both;
+        border-right: none;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        float:none;
+        width: 70%;
+        height: 100px;
+    }
+
+    div.logo img {
+        width: 100%;
+        height: auto;
+    }
+
+    header.top-header {
+        height: 200px;
+    }
+
+    header.top-header nav {
+        clear: both;
+        width: 100%;
+        border-top-style:solid;
+        border-top-width: 2px;
+        border-top-color: #ccc;
+    }
+
+    /* DISCARDED RULES TO MAKE THE LOGO GO ON TOP OF THE NAVIGATION BAR IN THE HEADER */
+    /*div.logo {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    div.logo a {
+        width: 100%;
+    }
+
+    div.logo a img {
+        width: calc(50px + 5vw);
+        margin-top: calc(35px - 4vw);
+        height: auto;
+    }
+
+    header.top-header nav {
+        float: left;
+        width: 70%;
+    }*/
+
+    section > div > nav ul > li a {
+        background-size: 200% auto;
+        background-position-x: 50%;
+        height: 200px;
+    }
+
+    section > div > nav ul > li a:hover {
+        background-size: calc(200% + 60px) auto;
+        background-position-x: calc(50% - 0px);
+        background-position-y: -110px;
+    }
+
+    section table {
+        border-collapse: collapse;
+        font-size: 10pt;
+    }
+
+    section td, section th {
+        padding: 2px;
+    }
+
+    header.extendable-header h2 {
+        font-size: 12pt;
+        line-height: 22pt;
+    }
+
+}
+
+@media(max-width: 600px) {
+    .centered {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .centered_small {
+        margin-left: 1%;
+        margin-right: 1%;
+        width: 98%;
+    }
+
+    .rightside {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    section.subheader ul {
+        padding: 0 3px;
+        font-size: 0.8em;
+    }
+
+    section.subheader ul li {
+        padding: 0;
+    }
+
+    section.th_background article {
+        background-color: rgba(145, 145, 145, 0.75);
+        padding: 10px;
+    }
+
+    .gallery-item {
+        width: 92%;
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+
+    /* Main page background fix */
+    section.bg_fe2 {
+        background-size: 600% auto;
+        background-position-x: 50%;
+    }
+}
+
+@media(max-width: 400px) {
+    section.subheader ul {
+        padding: 0;
+        font-size: 0.7em;
+    }
+
+    section.th_background article h4 {
+        font-size: 14pt;
+    }
+}

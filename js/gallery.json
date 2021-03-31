@@ -1,0 +1,12 @@
+{
+    "images":[
+        {"url":"../img/gallery/fe3h-dimitri.jpg", "caption":"The future king of Faerghus, Dimitri."},
+        {"url":"../img/gallery/fe3h-edelgard.jpg", "caption":"The soon-to-be Empress of Adrestia, Edelgard."},
+        {"url":"../img/gallery/fe3h-claude.jpg", "caption":"The next leader of the Alliance, Claude."},
+        {"url":"../img/gallery/fe3h-gameplay.jpg", "caption":"A quick view of the strategy phase of the game."},
+        {"url":"../img/gallery/fe3h-combat-mage.jpg", "caption":"A mage entering battle and casting a spell."},
+        {"url":"../img/gallery/fe3h-combat-axe.jpg", "caption":"A more straightforward fighter inflicting damage."},
+        {"url":"../img/gallery/fe3h-conversation-2.jpg", "caption":"Your units can interact with each other!"},
+        {"url":"../img/gallery/fe3h-cutscene.png", "caption":"A cutscene still from the prologue."},
+        {"url":"../img/gallery/fe3h-choice.jpg", "caption":"Which one of the three houses will you choose?"}
+]}
