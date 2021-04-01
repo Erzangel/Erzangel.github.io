@@ -1299,15 +1299,20 @@ div.pop-up a {
 
 @media(max-width: 600px) {
     .centered {
-        margin-left: 0;
-        margin-right: 0;
-        width: 100%;
+        margin-left: 2%;
+        margin-right: 2%;
+        width: 96%;
     }
 
     .centered_small {
         margin-left: 1%;
         margin-right: 1%;
         width: 98%;
+    }
+
+    .padded10 {
+        padding-left: 5px;
+        padding-right: 5px;
     }
 
     .rightside {
@@ -1333,6 +1338,14 @@ div.pop-up a {
         width: 92%;
         margin-left: 4%;
         margin-right: 4%;
+    }
+
+    article p {
+        font-size: 11pt;
+    }
+
+    h2 {
+        font-size: 1.2em;
     }
 
     /* Main page background fix */
