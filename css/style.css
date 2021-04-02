@@ -45,6 +45,15 @@ div a {
     color: #bbb;
 }
 
+/* Class for Youtube Videos */
+.video-player {
+    display: block;
+    margin: auto;
+    width: 750px;
+    height: 422px;
+    margin-bottom: 50px;
+}
+
 /* Rules relative to wrapper elements */
 /* ////////////////////// */
 .wrapper {
@@ -55,6 +64,8 @@ div a {
     margin-bottom: 30px;
 }
 
+/* Set of selectors applying style to headings on top of wrapper elements, 
+    giving those elements a fancy title bar above */
 section > div.wrapper > h1, section > div.wrapper > article > h1, div.wrapper h1.content-header {
     background-color: #333;
     color: #eee;
@@ -72,15 +83,24 @@ section > div.wrapper.black_bg > h1, section > div.wrapper.black_bg > article > 
 }
 /* ////////////////////// */
 
+/* Class creating a white background on the given element */
 .white_bg {
     background-color: #eee;
 }
 
+/* Class with the same idea as the class above, but using the opposite color */
 .black_bg {
     background-color: #333;
     color: #eee;
 }
 
+/* Class for the logo at the top */
+.title {
+    width: auto;
+    height: 100px;
+}
+
+/* Class for big titles on top of pages, leaving huge margins to give room for background images */
 .page_title {
     text-align: center;
     font-size: 30pt;
@@ -89,6 +109,7 @@ section > div.wrapper.black_bg > h1, section > div.wrapper.black_bg > article > 
     display: inline-block;
 }
 
+/* Class for big titles on top of wrapped elements */
 .section-title {
     margin-left: 30px;
     font-size: 26pt;
@@ -98,6 +119,7 @@ section > div.wrapper.black_bg > h1, section > div.wrapper.black_bg > article > 
     text-decoration: underline;
 }
 
+/* Class creating an outline on the border of elements, works best with wrapped elements */
 .outlined {
     border-style: solid;
     border-color: #444;
@@ -105,20 +127,35 @@ section > div.wrapper.black_bg > h1, section > div.wrapper.black_bg > article > 
     box-sizing:border-box;
 }
 
+/* A variation of the border color for the above class for a white background for less contrast */
 .outlined.white_bg {
     border-color: #aaa;
 }
 
+/* Class floating an element on the right side of the screen */
 .floatright {
     float: right;
     margin: 5px;
 }
 
+/* Class floating an element on the left side of the screen */
+.floatleft {
+    float: left;
+    margin: 5px;
+}
+
+/* Class quickly applying rules allowing an inline element to become a block element and to be centered */
 .block-center {
     display: block;
     margin: auto;
 }
 
+/* Class quickly applying centering property to a text element */
+.text-centered {
+    text-align: center;
+}
+
+/* Class given to small bits of text below images, usually describing them */
 .image-caption {
     font-size: 10pt;
     display: block;
@@ -127,10 +164,17 @@ section > div.wrapper.black_bg > h1, section > div.wrapper.black_bg > article > 
     text-align: center;
 }
 
+/* Class quickly applying some text shadow, appropriate for headings on a contrasted background */
 .heading-text-shadow {
     text-shadow: 3px 3px 2px rgba(100, 100, 100, 0.4);
 }
 
+/* Class to add some quick margin bottom */
+.margin-bottom {
+    margin-bottom: 50px;
+}
+
+/* Class given to the logo in the header */
 div.logo {
     float: left;
     border-right-style: solid;
@@ -709,6 +753,7 @@ div.download_badges ul {
     list-style-type: none;
     display: flex;
     padding: 0;
+    margin-bottom: 30px;
     justify-content:center;
     flex-flow: row wrap;
 }
@@ -724,6 +769,9 @@ div.download_badges ul li a img {
 div.gallery {
     /* We apply the flex display rule for our gallery, so that it displays itself nicely */
     display: flex;
+    /* We use the justify-content rule of flex lists to put some space between our gallery items.
+        This also helps us center them */
+    justify-content: space-evenly;
     /* We set a fixed width (that we will modify using media queries once we reach the appropriate screen width */
     width: 900px;
     /* We set the margin to auto, so that the content centers itself on the screen using the given width */
@@ -731,6 +779,8 @@ div.gallery {
     /* This flex rule allows gallery items to go to the bottom row when there is not enough space on the right */
     flex-flow: row wrap;
     background-color: #eee;
+    /* And a background behind the individual images */
+    background-image: url(../img/bg/bg_tile2.png);
 }
 
 .gallery-item {
@@ -753,8 +803,10 @@ div.gallery {
     /* This specific rule allows the width value to affect not the content part of the item,
      but to take into account the padding as well */
     box-sizing:border-box;
+    /* We round the edges a bit... */
     border-radius: 10px;
-    transition-property: background-color;
+    /* And we add some transition properties which will combine with the hover effects */
+    transition-property: background-color, border-color;
     transition-duration: 0.5s;
     transition-timing-function:ease-out;
     /* Grid rules */
@@ -765,10 +817,13 @@ div.gallery {
     border-top-width: 1px;
     border-left-color: #ddd;
     border-left-width: 1px;
+    /* And a background color */
+    background-color: #eee;
 }
 
 .gallery-item:hover {
-    background-color: #ccc;
+    background-color: #ddf;
+    border-color: #88e;
 }
 
 .gallery-item img {
@@ -783,6 +838,7 @@ div.gallery {
     width: 421px;
     height: 600px;
     margin: auto;
+    margin-bottom: 50px;
     background-color: rgba(10, 10, 10, 0.45);
     /*background-image: url(../img/bg/feh_summoning_bg.png);
     background-size: 100% auto;
@@ -931,12 +987,13 @@ div.gallery {
     text-align: center;
     line-height: 32px;
     color: rgba(250, 250, 250, 0.3);
-    transition-property: color;
-    transition-duration: 0.3s;
+    transition-property: color, background-color;
+    transition-duration: 0.4s;
 }
 
 .carousel-auto-scroll.auto-scroll-enabled {
     color: rgba(250, 250, 250, 0.6);
+    background-color: rgba(220, 220, 220, 0.1);
 }
 
 
@@ -1217,6 +1274,18 @@ div.pop-up a {
         width: 80%;
         margin-left: 10%;
         margin-right: 10%;
+    }
+
+    .video-player {
+        width: 95vw;
+        height: 53vw;
+        margin-bottom: 80px;
+    }
+
+    article .video-player {
+        width: 90vw;
+        height: 51vw;
+        margin-bottom: 20px;
     }
     
     div.logo {

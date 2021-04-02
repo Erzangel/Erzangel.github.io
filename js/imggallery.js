@@ -31,7 +31,7 @@ fetch("js/gallery.json")
                 galleryItem.appendChild(img);
                 galleryItem.appendChild(caption);
                 // And finally, with our gallery item ready, we add it to our gallery.
-                // How the gallery will look like with all of its children will be decided in the CSS.
+                // How the gallery will look like with all of its children will be decided in the CSS, at around line 750.
                 gallery.appendChild(galleryItem);
             })
         })
