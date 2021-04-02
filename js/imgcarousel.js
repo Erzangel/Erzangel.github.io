@@ -63,6 +63,26 @@ function bootCarousel(json) {
         carouselCirclesList.appendChild(newCircle);
     }
 
+    // This whole loop's goal is to add event listeners changing the image appropriately when we click on the circles (or pips)
+    for (var i = 0; i<nbImages; ++i) {
+        carouselCirclesList.children[i].addEventListener("click", function(e) {
+            for (var i = 0; i < nbImages; ++i ) {
+                if (carouselCirclesList.children[i] === e.target) {
+                    currentImg = i;
+                    carouselImages.style.left = "-" + (currentImg*widthImg) + "px";
+                    carouselName.innerText = json.images[currentImg].name;
+                    carouselCaption.innerText = json.images[currentImg].caption;
+                    updateCircles(currentImg);
+                    // We automatically disable autoscroll when using the arrow if the setting is true
+                    if (arrowsDisableAutoScroll === true) {
+                        autoScrollEnabled = false;
+                    }
+                    updateAutoScrollButton(autoScrollEnabled);
+                }
+            }
+        });
+    }
+
     // Then, we want to create a function that refreshes the one circle that's solid (as it changes everytime)
     // This function will be defined below in the code. For now, we will call it
 

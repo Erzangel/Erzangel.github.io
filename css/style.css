@@ -960,6 +960,7 @@ div.gallery {
     width: 10px;
     height: 10px;
     margin: 0 1px;
+    z-index: 9;
     transition-property: background-color;
     transition-duration: 0.4s;
 }
@@ -1315,28 +1316,6 @@ div.pop-up a {
         border-top-width: 2px;
         border-top-color: #ccc;
     }
-
-    /* DISCARDED RULES TO MAKE THE LOGO GO ON TOP OF THE NAVIGATION BAR IN THE HEADER */
-    /*div.logo {
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    div.logo a {
-        width: 100%;
-    }
-
-    div.logo a img {
-        width: calc(50px + 5vw);
-        margin-top: calc(35px - 4vw);
-        height: auto;
-    }
-
-    header.top-header nav {
-        float: left;
-        width: 70%;
-    }*/
 
     section > div > nav ul > li a {
         background-size: 200% auto;
